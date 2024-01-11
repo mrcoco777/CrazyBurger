@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import OrderPage from '../order/OrderPage'
+import LoginForm from '../login/LoginForm'
 
-export default function LoginForm() {
+export default function OrderPage() {
   
     //State
    const [InputValue, setInputValue] = useState("")
@@ -29,7 +29,7 @@ export default function LoginForm() {
         placeholder='Entrer votre prenom...' 
         required
         />
-      <button onClick={/OrderPage}>Acceder a votre espace</button>
+      <button onClick={LoginForm}>Deconnexion</button>
     </form>
 
   )
