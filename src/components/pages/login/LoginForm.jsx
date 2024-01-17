@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import OrderPage from '../order/OrderPage'
+import { Link } from 'react-router-dom'
 
 export default function LoginForm() {
   
@@ -29,7 +29,8 @@ export default function LoginForm() {
         placeholder='Entrer votre prenom...' 
         required
         />
-        <button onClick={OrderPage}>Accercer a votre Espace</button>
+        <button>Accercer a votre Espace</button>
+        <Link to="/order">Vers OrderPage</Link>
     </form>
 
   )
